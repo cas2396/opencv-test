@@ -62,7 +62,7 @@ def four_point_transform(_image, points):
 
 # парсим входные аргументы
 ap = argparse.ArgumentParser()
-ap.add_argument("-i", "--image", required=True, help="Path to the image to be scanned")
+ap.add_argument("-i", "--image", required=True)
 args = vars(ap.parse_args())
 
 # загружаем изображение и изменяем размеры для более точного определения контуров документа
